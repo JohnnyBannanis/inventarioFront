@@ -1,24 +1,30 @@
-import { useEffect, useState } from 'react';
-import Button from '@material-ui/core/Button';
+import { useEffect, useState } from "react";
+import { Button } from "antd";
 
+function Contador(props) {
+  const [contador, setContador] = useState(parseInt(props.initial));
 
-function Contador(props){
-    const [contador, setContador] = useState(parseInt(props.initial));
+  const aumentar = () => {
+    setContador(contador + 1);
+  };
+  const disminuir = () => {
+    setContador(contador - 1);
+  };
 
-    const aumentar = () => {
-      setContador(contador + 1)
-    }
-    const disminuir = () => {
-      setContador(contador - 1)
-    }
-    
-    return( 
+  return (
     <div>
-        <p>{contador}</p>
-        <Button onClick={aumentar} variant="contained">+</Button>
-        <Button onClick={disminuir} variant="contained">-</Button>
+      <p>{contador}</p>
+      <Button.Group>
+        {" "}
+        <Button onClick={aumentar} type="primary">
+          +
+        </Button>
+        <Button onClick={disminuir} danger type="primary">
+          -
+        </Button>
+      </Button.Group>
     </div>
-    );
+  );
 }
 
 export default Contador;
