@@ -1,5 +1,8 @@
-.Container {
+body {
   background-color: #f5f5f5;
+}
+
+.Container {
   text-align: center;
   margin-top: 3rem;
   /* padding: 1rem 0rem 3rem 0rem; */
