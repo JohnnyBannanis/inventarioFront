@@ -13,7 +13,6 @@ function Home(){
             <Contador initial="15" />
             <Contador initial="10" />
             <Link to='/about'>ABOUT</Link> 
-
         </Container> 
     </div>
     );

@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 const useStyles = makeStyles((theme) => ({
   margin: {
-    paddingTop:20,
+    paddingTop:34,
   },
 }));
 
