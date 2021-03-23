@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import Button from '@material-ui/core/Button';
+
 
 function Contador(props){
     const [contador, setContador] = useState(parseInt(props.initial));
@@ -13,8 +15,8 @@ function Contador(props){
     return( 
     <div>
         <p>{contador}</p>
-        <button onClick={aumentar}> + </button> 
-        <button onClick={disminuir }> - </button>
+        <Button onClick={aumentar} variant="contained">+</Button>
+        <Button onClick={disminuir} variant="contained">-</Button>
     </div>
     );
 }
