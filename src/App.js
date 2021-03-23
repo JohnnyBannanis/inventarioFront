@@ -2,7 +2,7 @@
 import './Style.css';
 import Home from './components/Home'
 import About from './components/About'
-import NavBar from './components/NavBar'
+import NavBar from './components/NavBar/Index'
 import {Switch, Route} from 'react-router-dom'
 
 
