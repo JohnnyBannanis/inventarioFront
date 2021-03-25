@@ -1,6 +1,7 @@
-import { Button, Input, Row, Col } from "antd";
+import { Button, Input, Row, Col, Card, Typography } from "antd";
 import { useState } from "react";
 import axios from "axios";
+const { Title } = Typography;
 
 function Login() {
   const [usuario, setUsuario] = useState("");
@@ -21,38 +22,37 @@ function Login() {
   return (
     <div>
       <form onSubmit={handleClick}>
-        <Row>
-          <Col offset={10}>
-            <h1>Login</h1>
-          </Col>
-        </Row>
-        <Row>
-          <Col span={4} offset={10}>
-            <Input
-              onChange={(e) => {
-                setUsuario(e.target.value);
-              }}
-              placeholder="Usuario"
-            />
-          </Col>
-        </Row>
-        <Row>
-          <Col span={4} offset={10}>
-            <Input.Password
-              onChange={(e) => {
-                setPass(e.target.value);
-              }}
-              placeholder="Contraseña"
-            />
-          </Col>
-        </Row>
-        <Row>
-          <Col offset={10}>
-            <Button htmlType="submit" danger type="primary">
-              Enviar
-            </Button>
-          </Col>
-        </Row>
+        {/* <Row> */}
+        {/* <Col md={24} lg={{ span: 6, offset: 9 }}> */}
+        <Card
+          style={{
+            backgroundColor: "#f0f2f5",
+            margin: "13%",
+          }}
+        >
+          <Title level={2} style={{ textAlign: "center" }}>
+            Login
+          </Title>
+          <Input
+            style={{ marginBottom: "10px" }}
+            onChange={(e) => {
+              setUsuario(e.target.value);
+            }}
+            placeholder="Usuario"
+          />
+          <Input.Password
+            style={{ marginBottom: "10px" }}
+            onChange={(e) => {
+              setPass(e.target.value);
+            }}
+            placeholder="Contraseña"
+          />
+          <Button block htmlType="submit" danger type="primary">
+            Enviar
+          </Button>
+        </Card>
+        {/* </Col>
+        </Row> */}
       </form>
     </div>
   );
