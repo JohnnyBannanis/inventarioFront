@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Button } from "antd";
 
 function Contador(props) {
@@ -15,7 +15,6 @@ function Contador(props) {
     <div>
       <p>{contador}</p>
       <Button.Group>
-        {" "}
         <Button onClick={aumentar} type="primary">
           +
         </Button>

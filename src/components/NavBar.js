@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Layout, Menu, Slider } from "antd";
+import { Layout, Menu } from "antd";
 import { useHistory } from "react-router-dom";
 import {
   MenuUnfoldOutlined,
