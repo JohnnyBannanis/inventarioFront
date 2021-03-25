@@ -35,6 +35,8 @@ function Login() {
             <Card
               style={{
                 backgroundColor: "#f0f2f5",
+                borderRadius:10,
+                boxShadow: "0 10px 16px 0 rgb(0 0 0 / 20%)",
               }}
             >
               <Title level={2} style={{ textAlign: "center" }}>
