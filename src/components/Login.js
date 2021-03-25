@@ -19,6 +19,7 @@ function Login() {
       );
 
       const data = response.data;
+      localStorage.setItem("token", data.token);
 
       console.log(data);
     } catch (error) {

@@ -6,7 +6,9 @@ import {
   MenuFoldOutlined,
   InfoCircleOutlined,
   HomeOutlined,
+  UserOutlined,
 } from "@ant-design/icons";
+import MenuItem from "antd/lib/menu/MenuItem";
 
 const { Header, Sider, Content } = Layout;
 
@@ -39,6 +41,13 @@ const SliderDemo = (props) => {
             icon={<InfoCircleOutlined />}
           >
             About
+          </Menu.Item>
+          <Menu.Item
+            key="3"
+            onClick={() => history.push("/login")}
+            icon={<UserOutlined />}
+          >
+            Login
           </Menu.Item>
         </Menu>
       </Sider>
