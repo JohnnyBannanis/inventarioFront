@@ -7,7 +7,7 @@ export default function Search({ onChange, value }) {
   };
 
   return (
-    <div
+    <div className={"roundedShadow"}
       style={{
         //borderWidth: "0px 0px 1px 0px",
         //borderStyle: "solid",
@@ -18,9 +18,9 @@ export default function Search({ onChange, value }) {
         marginRight: "auto",
         marginTop: "1vh",
         alignItems: "center",
-        boxShadow: "0 10px 16px 0 rgb(0 0 0 / 20%)",
+        //boxShadow: "0 10px 16px 0 rgb(0 0 0 / 20%)",
         padding:14,
-        borderRadius:10
+        //borderRadius:10
       }}
     >
       <SearchOutlined />

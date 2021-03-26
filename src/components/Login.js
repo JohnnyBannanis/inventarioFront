@@ -32,11 +32,9 @@ function Login() {
       <form onSubmit={handleClick}>
         <Row>
           <Col sm={24} lg={{ span: 8, offset: 8 }}>
-            <Card
+            <Card className={"roundedShadow"}
               style={{
-                backgroundColor: "#f0f2f5",
-                borderRadius:10,
-                boxShadow: "0 10px 16px 0 rgb(0 0 0 / 20%)",
+                background: "linear-gradient(135deg, #f8f8f8 0%,#efefef 100%)",
               }}
             >
               <Title level={2} style={{ textAlign: "center" }}>

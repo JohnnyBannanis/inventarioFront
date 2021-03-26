@@ -1,20 +1,18 @@
-import Contador from "./Contador";
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import SearchBar from "./shared/SearchBar";
-import Container from "./shared/Container";
+import InfoCard from "./shared/InfoCard";
+import { Col, Row } from "antd";
 
 function Home() {
   const [search, setSearch] = useState("");
   return (
     <div>
-      <Container>
-        <SearchBar onChange={setSearch} value={search} />
-        <Contador initial="5" />
-        <Contador initial="15" />
-        <Contador initial="10" />
-        <Link to="/about">ABOUT</Link>
-      </Container>
+      <Row>
+        <Col offset={1}>
+          <InfoCard colorNum={0} />
+          <InfoCard colorNum={1} />
+          <InfoCard colorNum={2} />
+        </Col>
+      </Row>
     </div>
   );
 }
